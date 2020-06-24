@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.sheefee.simple.sso.client.constant.AuthConst;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 认证中心页面显示控制器
@@ -42,5 +43,12 @@ public class IndexController {
 	@RequestMapping("/success")
 	public String success() {
 		return "success";
+	}
+
+	@RequestMapping("/hello")
+	@ResponseBody
+	public String hello() {
+		System.out.println("hello ...");
+		return "hello";
 	}
 }

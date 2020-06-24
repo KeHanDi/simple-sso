@@ -2,7 +2,7 @@ package com.sheefee.simple.sso.client.domain;
 
 /**
  * 用户
- * 
+ *
  * @author sheefee
  * @date 2017年9月17日 下午2:47:27
  *
@@ -38,5 +38,14 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 
 }
